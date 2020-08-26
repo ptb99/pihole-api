@@ -128,7 +128,7 @@ class PiHole(object):
             print("Unable to get queries. Please authenticate")
             exit(1)
 
-        url = "http://" + self.ip_address + "/admin/api_db.php?getAllQueries&auth=" + self.auth_data.token
+        url = "http://" + self.ip_address + "/admin/api.php?getAllQueries&auth=" + self.auth_data.token
 
         if client and domain:
             print("Cannot search for both client AND domain")
